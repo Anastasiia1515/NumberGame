@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>My game</title>
+    </head>
+
+    <body>
+        <h1>Number Guessing Game</h1>
+
+        <div class="start">
+            <button class="startGame">start</button>
+        </div>
+
+
+        <div class="form">
+            <label for="guessField">Enter your guess</label>
+            <input type="text" id="guessField" class="guessField" disabled @click="enableField()">
+            <input type="submit" value="Submit guess" id="guessSubmit" class="guessSubmit" disabled @click="enableSubmit()">
+        </div>
+
+        <div class="resultsInfo">
+            <p class="lastResult"></p>
+            <p class="lowOrHigh"></p>
+            <ul class="allAttempts"></ul>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
